@@ -6,12 +6,8 @@
 body {
     font-family: 'Rubik', sans-serif;
     color: #2d3138;
-
 }
 
-.bg-light {
-    background-color: #2d3138!important;
-}
 
 .logotype {
     color: #1d2124;
@@ -21,53 +17,46 @@ body {
      color: #1d2124;
      font-weight: 500;
  }
+
 .header_description {
     color: #1d2124;
     font: 18pt/14pt Rubik;
     font-weight: 500;
-
 }
+
 .image_phone {
     max-height: 22px;
 }
+
 .image_mail {
     max-height: 22px;
 }
+
 .image_send_mail {
     max-height: 22px;
 }
+
 .link_send_mail {
-    /*text-decoration: none;*/
     text-decoration-line: none;
     color: inherit;
 }
+
 .link_send_mail:hover {
     text-decoration: none;
 }
-.nav-link{
-    color: white;
-}
-#about {
-    /*border-right-color: grey; !* Цвет линии слева *!*/
-    /*border-right-style: solid;*/
-    /*border-right-width: 2px;*/
-}
-.nav-link:hover{
-    color: #575755;
-}
-.menu_list li {
-    /*border-left-color: grey; !* Цвет линии слева *!*/
-    /*border-left-style: solid;*/
-    /*border-left-width: 2px;*/
+
+.nav-item{
+    color: #ebeef1;
+    text-decoration-line: none;
 }
 
-.image_card_product {
-    max-height: 300px;
-    max-width: 300px;
+.nav-item:hover{
+    color: #a0a4a9;
+    text-decoration-line: none;
 }
+
 .card_button {
     background-color: #f77103;
-    /*text-decoration: none;*/
     color: white;
 }
 
@@ -75,9 +64,6 @@ body {
     background-color: #f9a01c;
     color: white;
 }
-/*.card_button:active {*/
-/*    background-color: #dc8828;*/
-/*}*/
 
 .card {
     border-color: #e1e3e5;
@@ -88,6 +74,7 @@ body {
 .content_description {
     border-top: solid #e1e3e5;!important;
 }
+
 .block_content {
     min-height: 100%;
 }
@@ -95,58 +82,33 @@ body {
 .description_production {
     border-top: solid #e1e3e5;!important;
 }
+
 .our_advantage {
     border-top: solid #e1e3e5;!important;
 }
-.d-block {
-    max-width: 800px;
-    max-height: 375px;
-}
 
-.d-flex {
-    max-height: 300px;
-    max-width: 300px;
-}
-
-footer {
-    border: solid #2d3138;
+.footer_block {
     background: #2d3138;
-    color: #909498;
+    color: white;
 }
+
 .footer_logo {
     font-weight: 100;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .footer_address {
     font-weight: 200;
-    font-size: 16px;
+    font-size: 14px;
 }
-
-.footer-contacts {
-    /*border: solid yellow;*/
-    /*color: white;*/
+small {
+    color: grey;
 }
-
-.footer-menu > div > a{
-    color: #909498;
-}
- .footer_contacts_image {
-     max-width: 22px;
-     max-height: 22px;
- }
-
-.footer_phone {
-     font-size: 15px;
-}
-.footer_email {
-     font-size: 15px;
-}
-
 .contacts-item > p > b {
     font-weight: 500;
     font-size: 20px;
 }
+
 .division-item > p > b {
     font-weight: 500;
     font-size: 20px;
