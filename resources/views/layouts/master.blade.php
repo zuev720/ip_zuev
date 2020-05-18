@@ -7,20 +7,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;900&display=swap" rel="stylesheet">
     <title>ИП Зуев @yield('title')</title>
 </head>
 <body>
 <div class="container header_information">
     <div class="row align-items-center">
-        <div class="col-lg"><h1 class="logotype">ИП Зуев</h1></div>
+        <div class="col-lg"><h1 class="logotype"><a class="logo_link" href="{{ route('index') }}">ИП Зуев</a></h1></div>
         <div class="col-lg"><h4 class="header_description">Комплектующие собственного производства для чистых помещений</h4></div>
         <div class="col-lg">
-            <div class="header_contacts align-items-center no-gutters">
-                <div class="col"><img class="image_phone img-fluid align-text-bottom" src="https://img2.freepng.ru/20180402/age/kisspng-mobile-phones-computer-icons-telephone-clip-art-book-now-button-5ac21e3a728975.1107891215226711624692.jpg">+7 (909) 297-41-44</div>
-                <div class="col"><img class="image_mail img-fluid align-text-bottom" src="https://i2.wp.com/www.advokat35.ru/wp-content/uploads/2016/03/email-icon.png?fit=250%2C250"> zuev720@mail.ru</div>
-                <div class="col"><a class="link_send_mail" href="mailto:zuev720@mail.ru"><img class="image_send_mail img-fluid align-text-bottom" src="https://w7.pngwing.com/pngs/570/333/png-transparent-email-address-computer-icons-symbol-email-miscellaneous-angle-orange-thumbnail.png" alt="">Связаться с нами</a></div>
+            <div class="header_contacts no-gutters">
+                <div class="row align-items-center"><img class="image_phone img-fluid" src="https://img2.freepng.ru/20180402/age/kisspng-mobile-phones-computer-icons-telephone-clip-art-book-now-button-5ac21e3a728975.1107891215226711624692.jpg">+7 (909) 297-41-44</div>
+                <div class="row align-items-center"><img class="image_mail img-fluid" src="https://i2.wp.com/www.advokat35.ru/wp-content/uploads/2016/03/email-icon.png?fit=250%2C250"> zuev720@mail.ru</div>
+                <div class="row"><a class="link_basket" href="{{ route('basket') }}"><img class="image_basket img-fluid align-text-bottom" src="https://img1.freepng.ru/20180920/soh/kisspng-computer-icons-basket-clip-art-trash-artikel-simplebuy-shopping-list-app-apk-free-download-5ba358839167a6.3613003515374316835956.jpg" alt="">Корзина</a></div>
             </div>
         </div>
     </div>
@@ -42,6 +42,16 @@
         </ul>
     </div>
 </nav>
+<div class="container text-center">
+    <div class="starter-template">
+        @if(session()->has('success'))
+            <p class="alert alert-success">{{ session()->get('success') }}</p>
+        @endif
+        @if(session()->has('warning'))
+            <p class="alert alert-warning">{{ session()->get('warning') }}</p>
+        @endif
+    </div>
+</div>
 <div class="block_content container">
 @yield('content')
 </div>

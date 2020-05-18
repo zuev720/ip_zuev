@@ -6,37 +6,20 @@
     <div class="row no-gutters">
         <div class="left col-lg-3">
             <nav class="nav flex-column">
-                <div class="card_product container m-0 p-0">
-                    <div class="card">
-                        <div class="container-fluid mt-3"><img class="image_card_product img-fluid card-img-top" src="https://proflineco.ru/upload/iblock/b9b/skrugl-el-1.png" alt="Card image cap"></div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">R 70</h4>
-                            <p class="card-text text-center ml-1 mr-1">Угловой соединительный элемент внутренний .</p>
-                            <div class="row justify-content-center"><a href="#" class="card_button btn align-middle">Заказать</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container m-0 p-0">
-                    <div class="card">
-                        <div class="container"><img class="image_card_product img-fluid card-img-top" src="https://proflineco.ru/upload/iblock/e9e/skrugl-el-2.png" alt="Card image cap"></div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">R 70</h4>
-                            <p class="card-text text-center">Угловой соединительный элемент внешний .</p>
-                            <div class="row justify-content-center"><a href="#" class="card_button btn align-middle">Заказать</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container m-0 p-0">
-                    <div class="card">
-                        <div class="container mt-3"><img class="image_card_product img-fluid card-img-top" src="https://proflineco.ru/upload/iblock/9ea/skrugl-el-3.png" alt="Card image cap"></div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Заглушка</h4>
-                            <p class="card-text text-center">Заглушка торцевая правая для плинтуса .</p>
-                            <div class="row justify-content-center"><a href="#!" class="card_button btn align-middle">Заказать</a></div>
-                        </div>
-                    </div>
-                </div>
+                @foreach($products as $product)
+                    <div class="card_product container m-0 p-0">
+                                        <div class="card">
+                                            <div class="container-fluid mt-3"><img class="image_card_product img-fluid card-img-top" src="{{ $product->image  }}" alt="Card image cap"></div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center">{{ $product->price }} руб.</h4>
+                                                <p class="card-text text-center ml-1 mr-1">{{ $product->name }}</p>
+                                                <div class="row justify-content-center text-center"><a href="{{ route('getProduct', [$product->id]) }}" class="card_button p-2 pr-3 pl-3">Подробнее</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    @endforeach
             </nav>
+            <div class="row justify-content-center"></div>
         </div>
         <div class="right col-12 col-lg-9 mt-3 align-items-center no-gutters">
             <div class="container-fluid mr-0 pr-0">

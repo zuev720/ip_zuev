@@ -12,6 +12,15 @@ body {
 .logotype {
     color: #1d2124;
 }
+.logo_link {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.logo_link:hover {
+    text-decoration-line: none;
+    color: inherit;
+}
 
  .header_contacts {
      color: #1d2124;
@@ -25,24 +34,25 @@ body {
 }
 
 .image_phone {
-    max-height: 22px;
+    max-height: 18px;
 }
 
 .image_mail {
+    max-height: 18px;
+}
+
+.image_basket {
     max-height: 22px;
 }
 
-.image_send_mail {
-    max-height: 22px;
-}
-
-.link_send_mail {
+.link_basket {
     text-decoration-line: none;
     color: inherit;
 }
 
-.link_send_mail:hover {
+.link_basket:hover {
     text-decoration: none;
+    color: orange;
 }
 
 .nav-item{
@@ -56,13 +66,20 @@ body {
 }
 
 .card_button {
+    border-radius: 5px;
     background-color: #f77103;
     color: white;
 }
 
 .card_button:hover {
     background-color: #f9a01c;
+    text-decoration-line: none;
     color: white;
+}
+
+.card-title {
+    font: 17pt/10pt Rubik;
+    font-weight: 500;
 }
 
 .card {
@@ -114,3 +131,40 @@ small {
     font-size: 20px;
 }
 
+.image_card_product {
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.card_button_in_basket {
+    max-width: 50px;
+}
+
+.basket_image_product {
+    max-height: 56px;
+}
+.link_basket_product {
+    text-decoration-line: none;
+    color: #020f1a;
+}
+
+.link_basket_product:hover {
+    text-decoration-line: none;
+    color: #728090;
+}
+
+.image_remote_basket_product {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.button_delete_product {
+    border: none;
+}
+
+.button_see_other_products .btn:hover {
+    background-color: #0c5460;!important;
+}
+.table-secondary > tr > th {
+    font-weight: 500;
+}
