@@ -76,7 +76,7 @@ class OrderController extends Controller
         $success = $order->saveOrder($request->name, $request->phone, $request->email);
 
         if ($success) {
-            session()->flash('success', 'Ваш заказ принят в обработку!');
+            session()->flash('success', 'Ваш заказ принят в обработку, в ближайшее время наш менеджер свяжется с вами!');
         } else {
             session()->flash('warning', 'Случилась ошибка');
         }

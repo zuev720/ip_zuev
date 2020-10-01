@@ -1,0 +1,241 @@
+.basket_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.basket_header_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.body_basket {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    border-bottom: 2px solid #9fa3a5;
+    margin-top: 5px;
+}
+
+.basket_block_of_names {
+    min-width: 100%;
+    background-color: #9fa3a5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.block_of_names_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.column_text {
+    text-transform: uppercase;
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 14px;
+    color: #404a4c;
+    margin: 0;
+    padding: 10px 0;
+
+}
+
+.column_delete {
+    width: 9%;
+}
+
+.column_name {
+    width: 23%;
+}
+
+.column_image {
+    width: 16%;
+}
+
+.column_amount {
+    width: 18%;
+}
+
+.column_price {
+    width: 18%;
+}
+
+.column_total_price {
+    width: 18%;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.delete_product_basket_block {
+    width: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button_delete_product {
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/delete.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.button_delete_product:hover {
+    background-image: url("../images/delete_hover.svg");
+}
+
+.basket_product_name_block {
+    width: 23%;
+    text-align: center;
+}
+
+.link_basket_product {
+    color: inherit;
+    font-family: OpenSans-Regular sans-serif;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.link_basket_product:hover {
+    text-decoration: none;
+    color: #311313;
+}
+
+.basket_product_name {
+    margin: 0;
+    padding: 0;
+}
+
+.basket_image_product_block {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.basket_image_product {
+    max-height: 100%;
+}
+
+.amount_product_block {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.amount_product_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.amount_product {
+    font-family: OpenSans-Bold sans-serif;
+    margin-left: 2px;
+    margin-right: 1px;
+}
+
+.button_minus {
+    font-family: OpenSans-Bold sans-serif;
+    padding: 6px 14px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.button_minus:hover {
+    background-color: darkred;
+}
+
+.button_plus {
+    font-family: OpenSans-Bold sans-serif;
+    padding: 6px 14px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.button_plus:hover {
+    background-color: darkgreen;
+}
+
+.basket_price_block {
+    width: 18%;
+    text-align: center;
+}
+
+.basket_sum_price_block {
+    width: 18%;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.basket_price_product {
+    font-family: OpenSans-Bold sans-serif;
+}
+
+.basket_sum_price_product {
+    font-family: OpenSans-Bold sans-serif;
+}
+
+.currency {
+    font-family: OpenSans-Regular sans-serif;
+    font-size: 14px;
+}
+
+.basket_total_price_block {
+    align-self: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.header_total_price_block {
+    font-family: OpenSans-Regular sans-serif;
+    margin-right: 20px;
+}
+
+.total_price {
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 20px;
+}
+
+.basket_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button_see_other_products {
+    color: #e2dfdf;
+    background-color: #8c9194;
+    padding: 8px 16px;
+}
+
+.button_see_other_products:hover {
+    color: #e2dfdf;
+    text-decoration: none;
+    background-color: #4a4949;
+}
+
+.checkout_order {
+    color: #e2dfdf;
+    background-color: #4d8a50;
+    padding: 8px 16px;
+}
+
+.checkout_order:hover {
+    color: #e2dfdf;
+    text-decoration: none;
+    background-color: #305832;
+}

@@ -1,0 +1,435 @@
+@import "product.css";
+@import "basket.css";
+@import "order.css";
+@import "products.css";
+
+@font-face {
+    font-family: OpenSans-Regular sans-serif;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: OpenSans-Bold sans-serif;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff) format("woff");
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #daebf3;
+    width: 100vw;
+}
+
+.header_information {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1140px;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+.header_description_block {
+    max-width: 400px;
+}
+
+.logo_link {
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 50px;
+    color: #1d2124;
+    text-transform: uppercase;
+}
+
+.logo_link:hover {
+    text-decoration: none;
+}
+
+.header_description {
+    font-family: OpenSans-Bold sans-serif;
+    color: #052135;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+}
+
+.header_contacts_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_contacts_block a {
+    position: relative;
+    text-decoration-line: none;
+    font-family: OpenSans-Bold sans-serif;
+    color: #174967;
+}
+
+.header_contacts_block a:hover {
+    color: #066684;
+}
+
+.phone_contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    width: 20px;
+    background-image: url("/images/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.email_contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    width: 20px;
+    background-image: url("/images/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+ .header_contacts_block .link_basket {
+     font-family: OpenSans-Bold sans-serif;
+     font-size: 1.2rem;
+     color: #4397b1;
+}
+
+ .header_contacts_block .link_basket:hover {
+     color: #066684;
+ }
+
+.link_basket:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    width: 20px;
+    background-image: url("/images/cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.menu {
+    width: 100vw;
+    background-color: #203150;
+    padding: 0;
+}
+
+.menu_list {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_item {
+    padding: 15px 10px;
+}
+
+.menu_link_item {
+    color: #ebeef1;
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.menu_link_item:hover{
+    color: #a0a4a9;
+    text-decoration: none;
+}
+
+.main_content {
+    width: 100%;
+    max-width: 1140px;
+    min-height: 49%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notification_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description_block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.products_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description_company_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.card_product {
+    width: 260px;
+}
+
+.card_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+}
+
+.wrapper_image_card {
+    position: relative;
+}
+
+.wrapper_image_card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #7996ad;
+    opacity: 0.1;
+}
+
+.card_product:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.image_card_product {
+    width: 100%;
+    min-height: 100%;
+}
+
+.card_product_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #dfdfdf;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #e1e8ea;
+}
+
+.card_product_title {
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 1.7rem;
+    color: #9e2f0c;
+}
+
+.card_text_wrapper {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card_product_text {
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 1rem;
+    color: #190707;
+    margin: 0;
+}
+
+.card_product_radius {
+    font-family: OpenSans-Regular sans-serif;
+}
+
+.card_button {
+    font-family: OpenSans-Bold sans-serif;
+    border-radius: 2px;
+    padding: 8px 16px;
+    background-color: #327392;
+    color: white;
+}
+
+.card_button:hover {
+    background-color: #1e475a;
+    text-decoration-line: none;
+    color: white;
+}
+
+.banner_project {
+    border: 1px solid #dfdfdf;
+}
+
+.banner_image {
+    width: 100%;
+}
+
+.main_description_block {
+    margin-top: 30px;
+}
+
+.our_advantage {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+.adv_item {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adv_item p {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.description_production {
+    display: flex;
+    flex-direction: column;
+}
+
+.description_production_wrapper-block {
+    display: flex;
+}
+
+.description_production_wrapper-block:nth-child(n+2) {
+    margin-top: 25px;
+}
+
+.description_production_image {
+    max-width: 45%;
+}
+
+.description_production_text_block {
+    margin-left: 30px;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2d3138;
+    color: #A0A0A0;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer_about_company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_about_company > * {
+    margin: 0;
+}
+
+.footer_about_company address {
+    margin-top: 10px;
+}
+
+.header_about_company {
+    font-family: OpenSans-Regular sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+.phone_and_email_address {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: OpenSans-Bold sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.phone_and_email_address > a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.phone_and_email_address > a:hover {
+    color: white;
+}
+
+.footer_phone_contact:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    bottom: 3px;
+    width: 20px;
+    background-image: url("/images/phone_footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer_email_contact:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -30px;
+    bottom: -1px;
+    width: 20px;
+    background-image: url("/images/email_footer_gray.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.address_footer_company {
+    font-family: OpenSans-Regular sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer_small {
+    font-family: OpenSans-Regular sans-serif;
+    margin-top: 50px;
+    color: #6b6c6f;
+}

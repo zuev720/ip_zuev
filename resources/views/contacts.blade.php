@@ -7,7 +7,7 @@
     <div class="contacts-wrapper">
         <div class="contacts-address">
             <div class="contacts-item">
-                <p><b>Юридический и фактический адрес:</b> 606100, Россия, Нижегородская область, г. Павлово, ул. Комунистическая, 20.</p>
+                <p><b>Юридический и фактический адрес:</b> 606100, Россия, Нижегородская область, г. Павлово, ул. Комунистическая, 10.</p>
             </div>
             <div class="contacts-item send">
                 <p><b>Почтовый адрес:</b> 606106, Россия, Нижегородская область, г. Павлово, ул. Урожайная, 4</p>
@@ -18,7 +18,7 @@
                     +7 (920) 057-10-12</p>
             </div>
             <div class="contacts-item">
-                <p><b>E-mail:</b> <a class="contacts_send_mail" href="mailto:zuev720@mail.ru">zuev720@mail.ru </a></p>
+                <p><b>E-mail:</b> <a class="contacts_send_mail" href="mailto:zuev720@mail.ru">logo@mail.ru </a></p>
             </div>
             <div class="contacts-item">
                 <p><b>Режим работы:</b> Пн-Сб 8:00-20:00</p>
